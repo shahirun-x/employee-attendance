@@ -45,7 +45,7 @@ app.use(errorHandler);
 
 const net = require('net');
 
-const startPort = process.env.PORT || 5000;
+const startPort = parseInt(process.env.PORT, 10) || 5000;
 let PORT = startPort;
 let maxAttempts = 10;
 
