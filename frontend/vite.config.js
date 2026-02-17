@@ -7,7 +7,7 @@ export default defineConfig({
     port: 3000,
     proxy: {
       '/api': {
-        target: 'http://localhost:50000',
+        target: 'https://employee-attendance-ol4t.onrender.com/',
         changeOrigin: true,
       },
     },
